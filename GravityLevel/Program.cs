@@ -167,6 +167,7 @@ namespace IngameScript
             //Positive Z-components require negative/Nost downward pitch about Right/X-axis
             //Input on (Y)aw axis needs to match output on Up/Y-axis
 
+            _target.Y = _target.X;
             _target.X = _target.Z;
             _target.Z = -_target.Y;
             _target.Y = _main.RotationIndicator.Y;
