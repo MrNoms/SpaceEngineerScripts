@@ -166,7 +166,8 @@ namespace IngameScript
             //Positive X-components require negative/CCW roll about Backward/Z-axis (Not based on right hand rule)
             //Positive Z-components require negative/Nost downward pitch about Right/X-axis
             //Input on (Y)aw axis needs to match output on Up/Y-axis
-
+            //Swapping X and Z components need Y as temporary space
+            
             _target.Y = _target.X;
             _target.X = _target.Z;
             _target.Z = -_target.Y;
