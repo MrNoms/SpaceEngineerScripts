@@ -1,0 +1,35 @@
+﻿Setup Instructions
+-----------
+1. Add this script to a programmable block on your ship.
+
+2. Set the script to run with default arguments via some sort of toolbar trigger,
+	button, timer block, etc.
+
+3. Have control of the ship and override at least 1 gyroscope (perhaps with a
+	timer block before the script).
+
+4. Trigger the programmable block.
+
+5. Trigger the programmable block again to stop the script and automatically turn
+	off gyro override.
+
+
+Tips and Design
+-----------
+
+~ The ship should have more than 1 gyro. It will still work as intended with a
+	single gyro, but will only have freedom on the yaw axis.
+
+~ All overridden gyros will still respond to player yaw input.
+
+~ Any gyroscope override values previously set will be preserved.
+
+~ Depending on how many gyroscopes on a craft I'm using, I use around 10%
+	override strength.
+
+~ This script will properly handle gyroscope groups.
+
+~ The script doesn't run until you start it and needs to be turned off. It will
+	automatically shut off when exiting the craft.
+
+~ Remote control blocks count as being in control of the ship.

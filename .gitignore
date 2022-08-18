@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Malware DevKit
+*/MDK/*
+
 # User-specific files
 *.rsuser
 *.suo
@@ -92,6 +95,8 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+*.sln
+*.csproj
 
 # Chutzpah Test files
 _Chutzpah*
