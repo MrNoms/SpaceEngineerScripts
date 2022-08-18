@@ -109,7 +109,7 @@ namespace IngameScript
                 }
             }
 
-            return false;
+            return true;
         }
 
         private bool _checkOverride(IMyGyro g)
@@ -118,10 +118,12 @@ namespace IngameScript
 
             if(g.GyroOverride)
             {
-                gData = new Dictionary<string, float>();
-                gData.Add("Yaw", g.Yaw);
-                gData.Add("Pitch", g.Pitch);
-                gData.Add("Roll", g.Roll);
+                gData = new Dictionary<string, float>
+                {
+                    { "Yaw", g.Yaw },
+                    { "Pitch", g.Pitch },
+                    { "Roll", g.Roll }
+                };
 
                 _gyroSavedData.Add(g, gData);
 
